@@ -1,8 +1,6 @@
 # SE-Project
 **Google Sheet:** [Meeting Minutes](https://github.com/bilal-512/SE-Project/blob/main/meeting_minutes/googlesheet.md)
 
----
-
 # Student Productivity & Engagement Platform
 
 ## Project Overview
@@ -10,14 +8,11 @@ The **Student Productivity & Engagement Platform** unifies multiple academic sys
 
 The platform’s vision is to create an ecosystem that promotes academic responsibility and mental wellness through intelligent automation, collaboration, and gamification. Its target users are undergraduate and graduate students seeking centralized access to academic tracking, collaboration, and wellness tools.
 
----
 
 ## Problem Statement
 Universities often use disconnected systems for courses, assignments, and announcements. Students must juggle multiple portals, leading to missed deadlines and reduced engagement. The lack of motivation tools and wellness support further contributes to stress and confusion.  
 
 This fragmentation causes frustration for students, confusion for faculty, and management challenges for administrators. The platform addresses these issues by integrating systems, promoting engagement, and supporting student well-being.
-
----
 
 ## Core Objectives
 The project aims to:
@@ -26,9 +21,7 @@ The project aims to:
 - **Enable collaboration** via study rooms, team challenges, and mentorship features.
 - **Support wellness** with smart break reminders, workload tracking, and mindfulness tools.
 - **Ensure accessibility** across web, iOS, and Android with consistent performance.
-
----
-
+- 
 ## System Architecture
 The platform uses a **microservices architecture** with separate frontend, backend, and data layers.
 
@@ -36,8 +29,6 @@ The platform uses a **microservices architecture** with separate frontend, backe
 - **Backend:** Node.js and Express.js with REST APIs, Socket.io for real-time communication, and an API gateway for load balancing.
 - **Database:** MongoDB for storage, Redis for caching, and cloud backups for reliability.
 - **Integration:** Supports LMS APIs, OAuth 2.0 authentication, university SSO, and external notification systems.
-
----
 
 ## Technology Stack
 - **Frontend:** React.js, TypeScript, Tailwind CSS, React Query, Axios  
@@ -48,8 +39,6 @@ The platform uses a **microservices architecture** with separate frontend, backe
 - **Monitoring:** Google Analytics, Sentry, Custom dashboards  
 - **DevOps:** GitHub Actions, Docker, Kubernetes, AWS/GCP/Azure  
 
----
-
 ## Development Methodology
 The project follows the **Agile Scrum** framework with 2–4 week sprints.  
 
@@ -58,8 +47,6 @@ The project follows the **Agile Scrum** framework with 2–4 week sprints.
 - **Developers:** Build, test, and review features.  
 
 Testing includes unit, integration, and user acceptance tests integrated with CI/CD pipelines to maintain high-quality code delivery.
-
----
 
 ## Feature Overview
 
@@ -75,8 +62,6 @@ Includes virtual study rooms, peer mentorship matching, file sharing, and discus
 ### Wellness
 Features intelligent break reminders, workload indicators, stress tracking, and a library of mindfulness exercises integrated with campus wellness resources.
 
----
-
 ## Team Structure
 - **Bilal** – Backend Developer (API development and optimization)  
 - **Waseem** – Mobile Developer (React Native app)  
@@ -84,8 +69,6 @@ Features intelligent break reminders, workload indicators, stress tracking, and 
 
 **Client Representatives:** *Shazia* and *Maryam* – Requirement validation, user testing, and feedback collection.  
 **Supporting Stakeholders:** University IT (infrastructure & security), Faculty (user insights), and Administration (strategic oversight).
-
----
 
 ## Contributing
 Developers are welcome to contribute by forking the repository and creating feature branches. All contributions must follow ESLint standards, include documentation, and maintain test coverage above 80%.
@@ -102,7 +85,5 @@ Developers are welcome to contribute by forking the repository and creating feat
 - Include clear feature documentation  
 - Address reviewer comments  
 - No merge conflicts before approval  
-
----
 
 **Status:** *In Development*
