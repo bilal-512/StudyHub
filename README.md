@@ -1,547 +1,108 @@
 # SE-Project
-Googesheet link: https://github.com/bilal-512/SE-Project/blob/main/meeting_minutes/googlesheet.md
-# Student Productivity & Engagement Platform
-
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Problem Statement](#problem-statement)
-- [Core Objectives](#core-objectives)
-- [System Architecture](#system-architecture)
-- [Technology Stack](#technology-stack)
-- [Development Methodology](#development-methodology)
-- [Feature Specifications](#feature-specifications)
-- [Team Structure](#team-structure)
-- [Contributing](#contributing)
+**Google Sheet:** [Meeting Minutes](https://github.com/bilal-512/SE-Project/blob/main/meeting_minutes/googlesheet.md)
 
 ---
 
+# Student Productivity & Engagement Platform
+
 ## Project Overview
+The **Student Productivity & Engagement Platform** unifies multiple academic systems into one centralized interface. It integrates LMS portals, administrative notifications, and student resources, allowing learners to manage all academic tasks and communications through web and mobile apps.  
 
-The Student Productivity & Engagement Platform consolidates fragmented academic information systems into a unified interface. The platform integrates Learning Management Systems, student portals, and administrative notifications, providing students with centralized access to their academic responsibilities across web and mobile devices.
-
-### Vision Statement
-
-Create an ecosystem enabling seamless academic responsibility management while maintaining student mental wellness through intelligent automation, social collaboration, and evidence-based gamification.
-
-### Target Audience
-
-Undergraduate and graduate students requiring centralized access to academic resources, assignment tracking, peer collaboration tools, and wellness support systems.
+The platform’s vision is to create an ecosystem that promotes academic responsibility and mental wellness through intelligent automation, collaboration, and gamification. Its target users are undergraduate and graduate students seeking centralized access to academic tracking, collaboration, and wellness tools.
 
 ---
 
 ## Problem Statement
+Universities often use disconnected systems for courses, assignments, and announcements. Students must juggle multiple portals, leading to missed deadlines and reduced engagement. The lack of motivation tools and wellness support further contributes to stress and confusion.  
 
-### Current Challenges
-
-Universities operate multiple disconnected platforms for various academic functions. Students regularly check separate systems for course materials, assignment submissions, grade postings, administrative announcements, and campus notifications.
-
-**Information Fragmentation**
-- Students navigate multiple platforms daily
-- Critical deadline notifications get overlooked
-- Inconsistent notification systems across platforms
-- No unified view of academic obligations
-
-**Reduced Engagement**
-- System complexity discourages consistent usage
-- Existing platforms lack motivational elements
-- Limited peer interaction capabilities
-- Minimal collaborative learning support
-
-**Mental Health Concerns**
-- No systematic workload monitoring approach
-- Absence of break reminders and wellness features
-- Students struggle maintaining healthy study-life balance
-- Limited stress management resources
-
-**Stakeholder Impact**
-- Students experience frustration and anxiety
-- Faculty receive increased inquiries due to confusion
-- Administrators face retention and satisfaction challenges
-- IT departments manage multiple legacy systems with integration difficulties
+This fragmentation causes frustration for students, confusion for faculty, and management challenges for administrators. The platform addresses these issues by integrating systems, promoting engagement, and supporting student well-being.
 
 ---
 
 ## Core Objectives
-
-### Objective 1: Unified Academic Dashboard
-
-Implement real-time synchronization of academic information sources into a single personalized interface.
-
-**Technical Requirements**
-- API integration with university LMS platforms
-- Webhook implementation for instant updates
-- Caching mechanisms for offline access
-- Cross-platform data consistency
-
-**Success Criteria**: Information synchronization latency under 5 minutes for 99% of updates.
-
-### Objective 2: Comprehensive Gamification System
-
-Design engagement mechanics encouraging consistent platform usage and task completion.
-
-**Components**
-- Point accumulation based on task completion
-- Achievement badges for milestones
-- Daily and weekly streak tracking
-- Privacy-respecting competitive leaderboards
-- Personalized challenge generation
-
-**Success Criteria**: 20% increase in daily active users within first semester.
-
-### Objective 3: Collaborative Learning Infrastructure
-
-Build social features enabling peer-to-peer academic support and knowledge sharing.
-
-**Features**
-- Virtual study room creation with capacity management
-- Team challenge systems with shared objectives
-- Peer mentorship matching based on academic profiles
-- Discussion forums with topic categorization
-- Real-time collaboration tools
-
-**Success Criteria**: 40% of active users engaging with collaborative features within two months.
-
-### Objective 4: Wellness and Burnout Prevention
-
-Integrate evidence-based wellness features promoting sustainable study habits and mental health.
-
-**Components**
-- Intelligent break reminders based on study duration
-- Workload visualization and balance indicators
-- Periodic stress level assessment tools
-- Curated mindfulness exercise library
-- Campus wellness service connections
-
-**Success Criteria**: 15% improvement in self-reported stress levels after three months.
-
-### Objective 5: Multi-Platform Accessibility
-
-Ensure consistent user experience across device types and operating systems.
-
-**Platform Coverage**
-- Native iOS application
-- Native Android application
-- Responsive web application
-- Progressive Web App capabilities
-
-**Success Criteria**: 95% user satisfaction rating for cross-platform usability.
+The project aims to:
+- **Unify academic systems** into a real-time dashboard with synchronized LMS data.
+- **Increase engagement** through gamification (points, badges, streaks, leaderboards).
+- **Enable collaboration** via study rooms, team challenges, and mentorship features.
+- **Support wellness** with smart break reminders, workload tracking, and mindfulness tools.
+- **Ensure accessibility** across web, iOS, and Android with consistent performance.
 
 ---
 
 ## System Architecture
+The platform uses a **microservices architecture** with separate frontend, backend, and data layers.
 
-### High-Level Architecture
-
-The platform follows microservices-oriented architecture with clear separation between frontend applications, backend services, and data storage layers.
-
-**Frontend Layer**
-- React.js web application for desktop browsers
-- React Native mobile applications for iOS and Android
-- Shared component library for consistent UI/UX
-- State management using Redux or Context API
-
-**Backend Layer**
-- RESTful API built with Node.js and Express.js
-- Real-time communication via Socket.io
-- Microservices for specific functionalities
-- API gateway for request routing and load balancing
-
-**Data Layer**
-- MongoDB for primary application data
-- Redis for caching and session management
-- Cloud storage for user-generated content
-- Backup and disaster recovery systems
-
-**Integration Layer**
-- LMS API connectors with OAuth 2.0 authentication
-- University SSO/LDAP integration
-- Third-party service integrations
-- Webhook receivers for external system notifications
-
-### Database Schema Design
-
-**Users Collection**
-- Authentication credentials and university ID
-- Profile information and preferences
-- Gamification statistics
-- Wellness tracking data
-
-**Tasks Collection**
-- Assignment details and deadlines
-- Priority levels and completion status
-- Source system references
-- User-created custom tasks
-
-**Courses Collection**
-- Course metadata and schedules
-- Faculty information
-- Enrolled student lists
-- Resource links
-
-**Collaborative Spaces Collection**
-- Study room configurations
-- Participant lists and roles
-- Shared resources
-- Chat message history
+- **Frontend:** React.js for web and React Native for mobile apps, using a shared UI library for consistent design.
+- **Backend:** Node.js and Express.js with REST APIs, Socket.io for real-time communication, and an API gateway for load balancing.
+- **Database:** MongoDB for storage, Redis for caching, and cloud backups for reliability.
+- **Integration:** Supports LMS APIs, OAuth 2.0 authentication, university SSO, and external notification systems.
 
 ---
 
 ## Technology Stack
-
-### Frontend Technologies
-
-**Web Application**
-- React.js for component-based UI development
-- TypeScript for type safety
-- Tailwind CSS for utility-first styling
-- React Query for server state management
-- Axios for HTTP requests
-
-**Mobile Applications**
-- React Native for cross-platform development
-- Native modules for platform-specific features
-- React Navigation for routing
-- Async Storage for local data persistence
-- Push notification libraries
-
-**Design and Prototyping**
-- Figma for UI/UX design and interactive prototypes
-- Design system documentation
-- Component library maintenance
-
-### Backend Technologies
-
-**Server Framework**
-- Node.js version 20.x LTS
-- Express.js for RESTful API development
-- TypeScript for backend type safety
-- Helmet.js for security headers
-- CORS middleware for cross-origin requests
-
-**Database Systems**
-- MongoDB for document storage
-- Mongoose ODM for schema validation
-- Redis for caching and session storage
-- Database indexing strategies
-
-**Real-Time Communication**
-- Socket.io for WebSocket connections
-- Event-driven architecture
-- Room-based chat implementations
-- Presence detection systems
-
-### Authentication and Security
-
-**Identity Management**
-- University LDAP/Active Directory integration
-- OAuth 2.0 authorization flows
-- JSON Web Tokens for session management
-- Refresh token rotation strategies
-- Multi-factor authentication support
-
-**Security Measures**
-- HTTPS/TLS 1.3 for communications
-- Database encryption at rest
-- Input validation and sanitization
-- Rate limiting on API endpoints
-- OWASP security best practices
-
-### External Integrations
-
-**Learning Management Systems**
-- Canvas LMS API integration
-- Moodle REST API support
-- Blackboard API connectivity
-- Generic LMS adapter interface
-
-**Notification Services**
-- Firebase Cloud Messaging for push notifications
-- SendGrid for email notifications
-- SMS alerts capability
-
-**Monitoring and Analytics**
-- Google Analytics for user behavior tracking
-- Sentry for error monitoring
-- Custom analytics dashboard
-- Performance monitoring tools
-
-### Development Tools
-
-**Version Control**
-- Git for source code management
-- GitHub for repository hosting
-- Branch protection rules
-- Pull request workflows
-
-**Project Management**
-- Jira for sprint planning and issue tracking
-- Confluence for documentation
-- Scrum board configurations
-
-**CI/CD Pipeline**
-- GitHub Actions for automation
-- Automated testing on pull requests
-- Docker containerization
-- Kubernetes for orchestration
-
-**Cloud Infrastructure**
-- AWS, Google Cloud Platform, or Microsoft Azure
-- Load balancers and auto-scaling
-- CDN for static assets
-- Database backup and replication
+- **Frontend:** React.js, TypeScript, Tailwind CSS, React Query, Axios  
+- **Mobile:** React Native, React Navigation, Async Storage  
+- **Backend:** Node.js (v20 LTS), Express.js, TypeScript, MongoDB, Mongoose, Redis  
+- **Security:** OAuth 2.0, JWT, HTTPS/TLS 1.3, MFA, OWASP standards  
+- **Integrations:** Canvas, Moodle, Blackboard, Firebase, SendGrid  
+- **Monitoring:** Google Analytics, Sentry, Custom dashboards  
+- **DevOps:** GitHub Actions, Docker, Kubernetes, AWS/GCP/Azure  
 
 ---
-
-
-
-
 
 ## Development Methodology
+The project follows the **Agile Scrum** framework with 2–4 week sprints.  
 
-### Agile Scrum Framework
+- **Product Owner:** Manages backlog and priorities.  
+- **Scrum Master:** Facilitates meetings and removes blockers.  
+- **Developers:** Build, test, and review features.  
 
-This project employs Scrum methodology with iterative development cycles for maximizing stakeholder feedback and continuous feature delivery.
-
-**Sprint Structure**
-- Sprint Duration: 2-4 weeks based on feature complexity
-- Sprint Planning: Beginning of each sprint with full team
-- Daily Standups: 15-minute synchronization meetings
-- Sprint Reviews: Demonstrations to stakeholders
-- Sprint Retrospectives: Team reflection and improvement
-
-**Roles and Responsibilities**
-
-Product Owner:
-- Maintains and prioritizes product backlog
-- Defines acceptance criteria
-- Makes scope and trade-off decisions
-- Represents end-user interests
-
-Scrum Master:
-- Facilitates Scrum ceremonies
-- Removes team impediments
-- Coaches on Agile practices
-- Shields team from disruptions
-
-Development Team:
-- Estimates effort for user stories
-- Commits to sprint goals
-- Designs and implements features
-- Conducts code reviews
-- Performs testing and quality assurance
-
-**Artifact Management**
-
-Product Backlog contains comprehensive feature lists prioritized by business value. Sprint Backlog includes current sprint items broken into manageable tasks. Increment represents working, tested features delivered at sprint end.
-
-**Quality Assurance**
-
-Testing embedded throughout development:
-- Test-Driven Development practices
-- Automated unit and integration tests
-- Continuous integration test suites
-- User acceptance testing
-- Performance and security testing
+Testing includes unit, integration, and user acceptance tests integrated with CI/CD pipelines to maintain high-quality code delivery.
 
 ---
 
-## Feature Specifications
+## Feature Overview
 
 ### Academic Dashboard
+A personalized dashboard showing deadlines, grades, and announcements in one view. It includes a timeline, color-coded priorities, unified notifications, and calendar integration with external tools.
 
-Central hub for student academic information.
+### Gamification
+Students earn points and badges for task completion, maintain streaks, and appear on leaderboards. Personalized challenges keep them motivated and engaged.
 
-**Assignment Timeline View**
-- Chronological deadline display
-- Color-coded priority indicators
-- Quick action buttons
-- Overdue item highlighting
-- Customizable view options
+### Collaboration
+Includes virtual study rooms, peer mentorship matching, file sharing, and discussion forums to promote academic cooperation and support.
 
-**Course Overview Cards**
-- Current enrollment list
-- Quick access to materials
-- Recent announcement previews
-- Grade summary access
-- Direct LMS links
-
-**Notification Center**
-- Unified notification inbox
-- Type-based categorization
-- Read/unread functionality
-- Preference filtering
-- Archive and search
-
-**Calendar Integration**
-- Visual schedule representation
-- Assignment deadline markers
-- Exam and quiz highlights
-- Custom event creation
-- External calendar export
-
-### Gamification System
-
-**Point Mechanics**
-- Task completion awards
-- Early submission bonuses
-- Streak bonuses
-- Configurable penalty system
-- Challenge event multipliers
-
-**Achievement Badges**
-- Category-based collections
-- Rarity tiers
-- Progress tracking
-- Profile display
-- Milestone recognition
-
-**Leaderboard System**
-- Weekly and monthly cycles
-- Friend-only leaderboards
-- Course-specific rankings
-- Anonymous participation
-- Opt-out functionality
-
-**Personalized Challenges**
-- Algorithm-generated based on behavior
-- Difficulty scaling
-- Time-bound periods
-- Reward tiers
-- Social challenge options
-
-### Collaborative Features
-
-**Study Rooms**
-- Customizable room creation
-- Capacity limits and access controls
-- Integrated text chat
-- File sharing
-- Whiteboard functionality
-- Video conferencing integration
-
-**Peer Mentorship**
-- Profile-based matching algorithm
-- Academic strengths consideration
-- Course history analysis
-- Availability scheduling
-- In-platform messaging
-- Goal setting and tracking
-
-**Knowledge Forums**
-- Course/subject categorization
-- Rich text question posting
-- Answer voting system
-- Expert contributor recognition
-- Search and filter
-- Topic notification system
-
-### Wellness Tools
-
-**Break Reminders**
-- Customizable intervals
-- Study session timer integration
-- Suggested activities
-- Snooze and dismiss options
-- Do not disturb mode
-
-**Workload Indicator**
-- Visual deadline representation
-- Color-coded stress assessment
-- Task distribution analysis
-- Rescheduling recommendations
-- Historical pattern analysis
-
-**Stress Tracking**
-- Periodic check-in prompts
-- Mood logging
-- Trend analysis
-- Workload correlation
-- Resource recommendations
-
-**Mindfulness Resources**
-- Curated exercise library
-- Guided audio sessions
-- Multiple duration options
-- Progress tracking
-- Campus counseling integration
+### Wellness
+Features intelligent break reminders, workload indicators, stress tracking, and a library of mindfulness exercises integrated with campus wellness resources.
 
 ---
 
-
-
-
-
 ## Team Structure
+- **Bilal** – Backend Developer (API development and optimization)  
+- **Waseem** – Mobile Developer (React Native app)  
+- **Hadia** – UI/UX Designer & Frontend Developer  
 
-### Development Team
-
-**Bilal** - Backend Developer
-- API development and optimization
-
-
-**Waseem** - Mobile Developer
-- React Native application development
-
-- **Hadia** -UI/UX designs
-- Frontend  development
-
-### Client Representatives
-
-**Shazia and Maryam**
-- Requirement validation
-- User acceptance testing
-- Feature feedback provision
-- Student perspective representation
-
-### Supporting Stakeholders
-
-**University IT Department**
-- Infrastructure support
-- System integration assistance
-- Security compliance verification
-
-**Faculty Members**
-- Indirect feature beneficiaries
-- Usage pattern insights
-- Student engagement feedback
-
-**University Administration**
-- Strategic oversight
-- Resource allocation
-- Success metrics monitoring
+**Client Representatives:** *Shazia* and *Maryam* – Requirement validation, user testing, and feedback collection.  
+**Supporting Stakeholders:** University IT (infrastructure & security), Faculty (user insights), and Administration (strategic oversight).
 
 ---
 
 ## Contributing
+Developers are welcome to contribute by forking the repository and creating feature branches. All contributions must follow ESLint standards, include documentation, and maintain test coverage above 80%.
 
-### Contribution Guidelines
+### Workflow
+1. Fork the repository  
+2. Create a feature branch  
+3. Implement and test changes  
+4. Submit a pull request  
+5. Address feedback and resolve conflicts  
 
-Fork the repository and create feature branches for development. Follow established coding standards and include appropriate test coverage. Submit pull requests with clear descriptions of changes.
-
-**Development Workflow**
-1. Fork repository
-2. Create feature branch
-3. Implement changes with tests
-4. Submit pull request
-5. Address review feedback
-
-**Code Standards**
-- Follow ESLint configurations
-- Write meaningful commit messages
-- Include inline documentation
-- Maintain test coverage above 80%
-- Update relevant documentation
-
-**Pull Request Requirements**
-- Pass all automated tests
-- Include feature documentation
-- Address reviewer comments
-- Obtain required approvals
-- Ensure no merge conflicts
+### Pull Request Requirements
+- All tests must pass  
+- Include clear feature documentation  
+- Address reviewer comments  
+- No merge conflicts before approval  
 
 ---
 
-
- 
-
-**Status**: In Development  
+**Status:** *In Development*
