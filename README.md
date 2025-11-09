@@ -11,7 +11,6 @@ Googesheet link: https://github.com/bilal-512/SE-Project/blob/main/meeting_minut
 - [Technology Stack](#technology-stack)
 - [Development Methodology](#development-methodology)
 - [Feature Specifications](#feature-specifications)
-- [Security Implementation](#security-implementation)
 - [Team Structure](#team-structure)
 - [Contributing](#contributing)
 
