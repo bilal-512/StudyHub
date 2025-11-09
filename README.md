@@ -2,12 +2,9 @@
 **Google Sheet:** [Meeting Minutes](https://github.com/bilal-512/SE-Project/blob/main/meeting_minutes/googlesheet.md)
 
 # Student Productivity & Engagement Platform
-
 ## Project Overview
 The **Student Productivity & Engagement Platform** unifies multiple academic systems into one centralized interface. It integrates LMS portals, administrative notifications, and student resources, allowing learners to manage all academic tasks and communications through web and mobile apps.  
-
 The platform’s vision is to create an ecosystem that promotes academic responsibility and mental wellness through intelligent automation, collaboration, and gamification. Its target users are undergraduate and graduate students seeking centralized access to academic tracking, collaboration, and wellness tools.
-
 
 ## Problem Statement
 Universities often use disconnected systems for courses, assignments, and announcements. Students must juggle multiple portals, leading to missed deadlines and reduced engagement. The lack of motivation tools and wellness support further contributes to stress and confusion.  
