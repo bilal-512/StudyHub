@@ -1,7 +1,7 @@
 # SE-Project
 **Google Sheet:** [Meeting Minutes](https://github.com/bilal-512/SE-Project/blob/main/meeting_minutes/googlesheet.md)
 **Videos Link:**  [Videos](https://github.com/bilal-512/SE-Project/tree/main/Meeting_Videos)
-**LinkedIn Post Link:**  [Link][(https://github.com/bilal-512/SE-Project/tree/main/Meeting_Videos](https://www.linkedin.com/posts/waseem-ullah-18368936b_softwareengineering-teamproject-systemdesign-ugcPost-7418720278576443393-jma-?utm_source=share&utm_medium=member_android&rcm=ACoAAFvCPbMBN8COZC50QaqkvQML0E2dckEf4uE))
+**LinkedIn Post Link:**  [Link](https://www.linkedin.com/posts/waseem-ullah-18368936b_softwareengineering-teamproject-systemdesign-ugcPost-7418720278576443393-jma-?utm_source=share&utm_medium=member_android&rcm=ACoAAFvCPbMBN8COZC50QaqkvQML0E2dckEf4uE)
 
 # Student Productivity & Engagement Platform
 ## Project Overview
