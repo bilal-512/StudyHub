@@ -1,7 +1,25 @@
 # SE-Project
-**Google Sheet:** [Meeting Minutes](https://github.com/bilal-512/SE-Project/blob/main/meeting_minutes/googlesheet.md)
-**Videos Link:**  [Videos](https://github.com/bilal-512/SE-Project/tree/main/Meeting_Videos)
-**LinkedIn Post Link:**  [Link](https://www.linkedin.com/posts/waseem-ullah-18368936b_softwareengineering-teamproject-systemdesign-ugcPost-7418720278576443393-jma-?utm_source=share&utm_medium=member_android&rcm=ACoAAFvCPbMBN8COZC50QaqkvQML0E2dckEf4uE)
+
+# 🎓 SE-Project — Student Productivity & Engagement Platform
+
+**📄 Google Sheet (Meeting Minutes):**
+[https://github.com/bilal-512/SE-Project/blob/main/meeting_minutes/googlesheet.md](https://github.com/bilal-512/SE-Project/blob/main/meeting_minutes/googlesheet.md)
+
+**🎥 Meeting Videos:**
+[https://github.com/bilal-512/SE-Project/tree/main/Meeting_Videos](https://github.com/bilal-512/SE-Project/tree/main/Meeting_Videos)
+
+**🔗 LinkedIn Post:**
+[https://www.linkedin.com/posts/waseem-ullah-18368936b_softwareengineering-teamproject-systemdesign-ugcPost-7418720278576443393-jma-?utm_source=share&utm_medium=member_android&rcm=ACoAAFvCPbMBN8COZC50QaqkvQML0E2dckEf4uE](https://www.linkedin.com/posts/waseem-ullah-18368936b_softwareengineering-teamproject-systemdesign-ugcPost-7418720278576443393-jma-?utm_source=share&utm_medium=member_android&rcm=ACoAAFvCPbMBN8COZC50QaqkvQML0E2dckEf4uE)
+
+
+## 🎨 UI/UX & Prototypes (Figma)
+
+**🌐 Web App Prototype:**
+[https://www.figma.com/proto/1plrisBnSrAM9sdiUFBw6q/web-app?node-id=142-1879&p=f&t=ABbjeTzDbFjLjSF2-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=142%3A1879](https://www.figma.com/proto/1plrisBnSrAM9sdiUFBw6q/web-app?node-id=142-1879&p=f&t=ABbjeTzDbFjLjSF2-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=142%3A1879)
+
+**📊 Centralized Student Dashboard Design:**
+[https://www.figma.com/make/pcHvmHwqr5onEsM2iAbj10/Centralized-Student-Dashboard?fullscreen=1&t=vZhmImbfL07DZqX2-1](https://www.figma.com/make/pcHvmHwqr5onEsM2iAbj10/Centralized-Student-Dashboard?fullscreen=1&t=vZhmImbfL07DZqX2-1)
+
 
 # Student Productivity & Engagement Platform
 ## Project Overview
